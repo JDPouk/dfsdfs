@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -9,11 +9,6 @@
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="css/foundation.css">
-    <link rel="stylesheet" type="text/css" href="css/foundation.min.css">
-    <link rel="stylesheet" type="text/css" href="css/foundation-icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="dfs.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -24,38 +19,61 @@
 </head>
 <body>
 
-    <!-- nav start --> 
-<div class="cell">
-<header style="background-color: black; color:white;" >
+    <!-- NAVBAR
+    ================================================== -->
+    <style>
+        /* use navbar-wrapper to wrap navigation bar, the purpose is to overlay navigation bar above slider */
+        .navbar-wrapper {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            width: 100%;
+            height: 51px;
+        }
+        .navbar-wrapper > .container {
+            padding: 0;
+        }
 
-<div class="top-bar"  style="background-color: black;" >
-  <div class="top-bar-left">
-  	<div style="margin: 0;"><a href="#"  style="color: white;"><span class="menu vertical" style="background-color: black; padding-left: 100px;"></span></a><span class="menu vertical" style="background-color: black; padding-left: 100px;"><a href="#"  style="color: white;">
-  		<div style="padding-left: 500px;">
-  			<img src="https://s0.wp.com/wp-content/themes/vip/newscorpau-nlm-vogue/assets/src/img/vogue-au-small.png">
-  		</div>
-  		</a></span></div>
-    <ul class="dropdown menu" data-dropdown-menu  style="background-color: black; padding-left: 120px;" >
-      <li><a href="#"  style="color: white;">SUBSCRIBE</a></li>
-      <li><a href="#" style="color: white;">FASHION</a></li>
-      <li><a href="#" style="color: white;">BEAUITY</a></li>
-      <li><a href="#" style="color: white;">BRIDAL</a></li>
-      <li><a href="#" style="color: white;">CULTURE</a></li>
-      <li><a href="#" style="color: white;" >CELEBRITY</a></li>
-      <li><a href="#" style="color: white;">VOGUE LIVING</a></li>
-      <li><a href="#" style="color: white;">BLOGS</a></li>
-      <li><a href="#" style="color: white;">MISS VOGUE</a></li>
-      </ul>
+        @media all and (max-width: 768px ){
+            .navbar-wrapper {
+                position: relative;
+                top: 0px;
+            }
+        }
+    </style>
+    <div class="navbar-wrapper">
+        <div class="container">
+
+            <nav class="navbar navbar-inverse navbar-static-top" role="navigation" style="margin-bottom: 0px;">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="https://www.jssor.com/index.html">Bootstrap Carousel</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="https://www.jssor.com/index.html">Home</a></li>
+                            <li><a href="https://www.jssor.com/tutorial/index.html">Tutorial</a></li>
+                            <li><a href="https://www.jssor.com/help/index.html">Help</a></li>
+                            <li><a href="https://www.jssor.com/demos/index.html">Demos</a></li>
+                            <li><a href="https://www.jssor.com/skins/index.html">Skins</a></li>
+                            <li><a href="https://www.jssor.com/development/index.html">Development</a></li>
+                            <li><a href="https://www.jssor.com/download.html">Download</a></li>
+                            <li><a href="https://www.jssor.com/support.html">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
     </div>
-  <div class="top-bar-right">
-    <ul class="menu">
-      <li><input type="search" placeholder="Search"></li>
-      <li><button type="button" class="button" style="background-image: url(http://www.yim778.com/data/out/33/740818.png);"></button></li>
-      </ul>
-    </div>
-</div>
-	</header>
-	</div>
+
+    <div style="min-height: 50px;">
         <!-- Jssor Slider Begin -->
         
         <style>
@@ -78,29 +96,22 @@
             }
         </style>
         <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto;
-        top: 0px; left: 0px; width: 1301px; height: 600px; overflow: hidden;">
+        top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
             <!-- Loading Screen -->
             <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
                 <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="../svg/loading/static-svg/spin.svg" />
             </div>
 
             <!-- Slides Container -->
-            <div u="slides" style="position: absolute; left: 0px; top: 0px; width: 1300px; height: 700px; overflow: hidden;">
-
+            <div u="slides" style="position: absolute; left: 0px; top: 0px; width: 1300px; height: 500px; overflow: hidden;">
                 <div>
-                	<img data-u="image" src="http://logok.org/wp-content/uploads/2014/12/Vogue-logo.png" />
+                    <img data-u="image" src="../img/gallery/1300x500/001.jpg" />
                 </div>
                 <div>
-                    <img data-u="image" src="https://www.hdwallpapers.in/walls/deepika_padukone_vogue_eyewear-wide.jpg" />
+                    <img data-u="image" src="../img/gallery/1300x500/002.jpg" />
                 </div>
                 <div>
-                    <img data-u="image" src="https://wallpaperclicker.com/storage/wallpaper/Alia-Bhatt-Vogue-India-HD-Wallpapers-Images-55478560.jpg"/>
-                </div>
-                <div>
-                    <img data-u="image" src="https://www.hdwallpapers.in/walls/adele_vogue_us-wide.jpg" />
-                </div>
-                <div>
-                	<img data-u="image" src="https://www.hdwallpapers.in/walls/selena_gomez_vogue_2016-wide.jpg" />
+                    <img data-u="image" src="../img/gallery/1300x500/003.jpg" />
                 </div>
             </div>
             
@@ -147,102 +158,77 @@
         <!-- Jssor Slider End -->
     </div>
 
-  
-  
-<div class="grid-container" style="padding-top: 200px;">
-  <div class="grid-x grid-padding-x small-up-2 medium-up-3">
-    <div class="cell">
-      <div class="card">
-        <img src="https://i.pinimg.com/736x/7d/8b/f0/7d8bf0cd3d5cd9e0f9e15ecd4623d8f8--iconic-vogue-covers-vouge-covers.jpg">
-        <div class="card-section">
-          
-        </div>
-      </div>
-    </div>
-    <div class="cell">
-      <div class="card">
-        <img src="https://www.vogue.com/wp-content/uploads/2015/10/15/angelina-jolie-pitt-november-2015-cover.jpg">
-        <div class="card-section">
-        
-        </div>
-      </div>
-    </div>
-    <div class="cell">
-      <div class="card">
-        <img src="https://assets.vogue.com/photos/58c71d37d882667796e08bb4/master/pass/08-selena-gomez-vogue-april-2017.jpg">
-        <div class="card-section">
-         
-        </div>
-      </div>
-    </div>
-  </div>
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
 
-</div>
+    <div class="container marketing">
 
-<div class="grid-container" style="padding-top: 50px; padding-bottom: 100px;" >
-  <div class="grid-x grid-padding-x small-up-2 medium-up-3">
-    <div class="cell">
-      <div class="card">
-        <img src="https://assets.vogue.com/photos/5877049471b368a625a08fff/master/pass/jennifer-lawrence-december-2015-cover.jpg">
-        <div class="card-section">
-          
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">This page runs <a href="http://getbootstrap.com" target="_blank" rel="nofollow">Bootstrap</a> with Jssor Slider.</h2>
+                <p class="lead">Use Jssor Slider as a compoment of Bootstrap is extremly easy. Given a carousel you worked out, to integrate it with Bootstrap, you can just copy javascript and html code and paste it into your page. This page is a simple demo, please view source of this page or download <a href="https://www.jssor.com/download-bootstrap-carousel-slider-example.html">Bootstrap Carousel Slider Example</a>.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="cell">
-      <div class="card">
-        <img src="https://media.vogue.in/wp-content/uploads/2017/09/VOGUE_MAIN-ISSUE-SUPPLIMENT_SEP_2017_Stitch-file_Page_001.jpg">
-        <div class="card-section">
-        
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            </div>
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Javascript Code</h2>
+                <div class="lead" style="background-color:#f0f0f0; border: 1px dashed #000; white-space: nowrap;">
+                    <pre style="margin:0px;">
+&lt;script type="text/javascript" src="../js/jssor.slider.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    jQuery(document).ready(function ($) {
+        var options = {
+            ..
+        };
+            
+        var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+        ...
+    });
+&lt;/script&gt;</pre>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="cell">
-      <div class="card">
-        <img src="https://media1.popsugar-assets.com/files/thumbor/NB_ohirgJTCE8NSVJLn-uug6wO8/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2017/10/27/053/n/1922564/5781916859f3cc912098c7.86922439_edit_img_cover_file_44191694_1509145572/i/Rihanna-Vogue-Arabia-Cover-November-2017.jpg">
-        <div class="card-section">
-         
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">HTML Code</h2>
+                <div class="lead" style="background-color:#f0f0f0; border: 1px dashed #000; white-space: nowrap;">
+                    <pre style="margin:0px;">
+&lt;div style="min-height: 50px;"&gt;
+    &lt;!-- Jssor Slider Begin --&gt;
+    &lt;div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto; width: 980px; height: 380px; overflow: hidden;"&gt;
+        ...
+    &lt;/div&gt;
+    &lt;!-- Jssor Slider End --&gt;
+&lt;/div&gt;</pre>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-</div>
+        <hr class="featurette-divider">
 
-
-  
-   
+        <!-- /END THE FEATURETTES -->
         <!-- FOOTER -->
-        <footer style="background-color: #252121; color: white;">
-          
-	<div class="cell" style="padding-left: 100px;">
- 	<a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-google"></a>
-<a href="#" class="fa fa-linkedin"></a>
-<a href="#" class="fa fa-youtube"></a>
-<a href="#" class="fa fa-instagram"></a>
-<a href="#" class="fa fa-pinterest"></a>
-<a href="#" class="fa fa-snapchat-ghost"></a>
-<a href="#" class="fa fa-skype"></a>
-<a href="#" class="fa fa-android"></a>
-<a href="#" class="fa fa-dribbble"></a>
-<a href="#" class="fa fa-vimeo"></a>
-<a href="#" class="fa fa-tumblr"></a>
-<a href="#" class="fa fa-vine"></a>
-<a href="#" class="fa fa-foursquare"></a>
-<a href="#" class="fa fa-stumbleupon"></a>
-<a href="#" class="fa fa-flickr"></a>
-<a href="#" class="fa fa-yahoo"></a>
-<a href="#" class="fa fa-reddit"></a>
-<a href="#" class="fa fa-rss"></a>
- 
- </div>
-          
-        </footer>
         <footer>
-        	 <div class="cell" style="background-color: black; padding-bottom: 100px; padding-left: 700px; padding-top: 100px; ">
-       	      <img src="image/vogue-au-small.png" alt=""/> </div>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; Jssor Slider 2009 - 2016. &middot; <a href="#">Privacy</a> &middot; </p>
         </footer>
 
     </div><!-- /.container -->
@@ -250,18 +236,14 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="../js/jquery-1.9.1.min.js"></script>
     <script src="bootstrap.min.js"></script>
     <script src="docs.min.js"></script>
-    <script src="js/jquery.js">
-    <script src="js/foundation.min.js">
-	
-		
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="ie10-viewport-bug-workaround.js"></script>
 
     <!-- jssor slider scripts-->
-    <script type="text/javascript" src="js/jssor.slider.min.js"></script>
+    <script type="text/javascript" src="../js/jssor.slider.min.js"></script>
     <script>
         jQuery(document).ready(function ($) {
 

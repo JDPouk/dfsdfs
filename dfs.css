@@ -1,0 +1,118 @@
+﻿.fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: transparent;
+  color: gray;
+}
+
+.fa-twitter {
+   background: transparent;
+  color: gray;
+}
+
+.fa-google {
+ background: transparent;
+  color: gray;
+}
+
+.fa-linkedin {
+  background: transparent;
+  color: gray;
+}
+
+.fa-youtube {
+  background: transparent;
+  color: gray;
+}
+
+.fa-instagram {
+ background: transparent;
+  color: gray;
+}
+
+.fa-pinterest {
+  background: transparent;
+  color: gray;
+}
+
+.fa-snapchat-ghost {
+ background: transparent;
+  color: gray;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: transparent;
+  color: gray;
+}
+
+.fa-android {
+ background: transparent;
+  color: gray;;
+}
+
+.fa-dribbble {
+ background: transparent;
+  color: gray;
+}
+
+.fa-vimeo {
+ background: transparent;
+  color: gray;
+}
+
+.fa-tumblr {
+ background: transparent;
+  color: gray;
+}
+
+.fa-vine {
+   background: transparent;
+  color: gray;
+}
+
+.fa-foursquare {
+ background: transparent;
+  color: gray;
+}
+
+.fa-stumbleupon {
+   background: transparent;
+  color: gray;
+}
+
+.fa-flickr {
+   background: transparent;
+  color: gray;
+}
+
+.fa-yahoo {
+ background: transparent;
+  color: gray;
+}
+
+.fa-soundcloud {
+ background: transparent;
+  color: gray;
+}
+
+.fa-reddit {
+  background: transparent;
+  color: gray;
+}
+
+.fa-rss {
+  background: transparent;
+  color: gray;
+}
